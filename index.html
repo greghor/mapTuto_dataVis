@@ -27,7 +27,7 @@ var svg = d3.select('#map').append("svg")
 var deps = svg.append("g");
 
 
-d3.json('dep', function(req, geojson) {
+d3.json('dep.json', function(req, geojson) {
     deps.selectAll("path")
         .data(geojson.features)
         .enter()
